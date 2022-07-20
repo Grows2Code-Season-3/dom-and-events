@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>The DOM and Events</title>
+      <script>
+            let numLikes = 0;
+            function updateLikes () {
+                  numLikes++;
+                  let likeNode = document.getElementById("num-likes");
+                  likeNode.innerHTML = `${numLikes} Likes`;
+            }
+
+      </script>
+
+</head>
+<body id="body">
+      <p id="like-button" onclick="updateLikes();">Like</p>
+      <p id="num-likes">0 Likes</p>
+</body>
+</html>
